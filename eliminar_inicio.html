@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERSOS EN PRIMAVERA</title>
+    <link rel="stylesheet" href="formularios.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <img class="logo" src="assets/logo_header.png" alt="logo_intoweb" />
+            <img class="boton_cabecera" onclick="anadir()" src="assets/iconos/menu-hamburguesa.png" />
+            <div class="container_cabecera">
+                <div class="menu">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="registrolibros.php">Libros</a>
+                    <a href="registroescritores.php">Escritores</a>
+                    <a href="registroediciones.php">Ediciones</a>
+                </div>
+                <div class="usuario">
+                    <a href="iniciarsesion.html"><img src="assets/iconos/usuario.png" alt="" />
+                        <p>Inicio sesion</p>
+                    </a>
+                    <a href="compra.html"><img src="assets/iconos/carrito-de-compras.png" alt="" />
+                        <p>Comprar</p>
+                    </a>
+
+                    <a href="anadirproducto.html"><img src="assets/iconos/mas.png" alt="" />
+                        <p>Añadir libro</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container_body">
+        <div class="iniciarsesion">
+            <form class="anadir" action="php/eliminar_autor.php" method="post">
+                <h1 class="titulo_inicio">ELIMINAR UN AUTOR</h1>
+                <div>
+                    <label for="nombre_autor">Nombre:</label>
+                    <input type="text" id="nombre_autor" name="nombre_autor" required>
+                </div>
+                <button class="boton_enviar" type="submit">Eliminar</button>
+            </form>
+            <form class="anadir" action="php/eliminar_usuario.php" method="post">
+                <h1 class="titulo_inicio">ELIMINAR UN USUARIO</h1>
+                <div>
+                    <label for="nombre_usuario">Nombre:</label>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+                </div>
+                <button class="boton_enviar" type="submit">Eliminar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor_footer">
+            <img src="assets/logo_footer.png" alt="">
+            <div class="footer_menu">
+                <h2>Menú</h2>
+                <p>Sobre nosotros</p>
+                <p>Colabora con nosotros</p>
+                <p>Envia tu manuscrito</p>
+                <p>Dondé comprar</p>
+                <p>Contacto</p>
+            </div>
+            <div class="footer_redes">
+                <h2>Redes</h2>
+                <div><img src="assets/iconos/tik-tok.png" alt=""><a href="https://www.tiktok.com/es/">
+                        <p>Tik-Tok</p>
+                    </a>
+                </div>
+                <div><img src="assets/iconos/facebook.png" alt=""><a href="https://www.facebook.com/?locale=es_ES">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <div><img src="assets/iconos/instagram.png" alt=""><a href="https://www.instagram.com">
+                        <p>Instagram</p>
+                    </a>
+                </div>
+                <div><img src="assets/iconos/twitter.png" alt=""><a href="https://x.com/?lang=es">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+                <div><img src="assets/iconos/youtube.png" alt=""><a href="https://www.youtube.com">
+                        <p>Youtube</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="subfooter">
+        <p>© Todos los derechos reservados - </p>
+    </div>
+    </footer>
+    <script src="js/animacion.js"></script>
+</body>
+
+</html>

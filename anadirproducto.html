@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERSOS EN PRIMAVERA</title>
+    <link rel="stylesheet" href="formularios.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <img class="logo" src="assets/logo_header.png" alt="logo_intoweb" />
+            <img class="boton_cabecera" onclick="anadir()" src="assets/iconos/menu-hamburguesa.png" />
+            <div class="container_cabecera">
+                <div class="menu">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="registrolibros.php">Libros</a>
+                    <a href="registroescritores.php">Escritores</a>
+                    <a href="registroediciones.php">Ediciones</a>
+                </div>
+                <div class="usuario">
+                    <a href="iniciarsesion.html"><img src="assets/iconos/usuario.png" alt="" />
+                        <p>Inicio sesion</p>
+                    </a>
+                    <a href="compra.html"><img src="assets/iconos/carrito-de-compras.png" alt="" />
+                        <p>Comprar</p>
+                    </a>
+
+                    <a href="anadirproducto.html"><img src="assets/iconos/mas.png" alt="" />
+                        <p>Añadir libro</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container_body">
+        <div class="iniciarsesion">
+            <form class="anadir" action="php/anadir_libro.php" method="post">
+                <h1 class="titulo_inicio">AÑADIR UN LIBRO</h1>
+                <div><label for="titulo"><b>Titulo:</b></label>
+                    <input type="text" name="titulo" id="titulo" required>
+                </div>
+                <div><label for="nombre_autor"><b>Autor:</b></label>
+                    <input type="text" name="nombre_autor" id="nombre_autor" required>
+                </div>
+                <div class="union">
+                    <label for="fecha_publicacion"><b>Fecha Publicacion:</b></label>
+                    <input type="date" name="fecha_publicacion" id="fecha_publicacion" required>
+                    <label for="id_editorial"><b>Editorial:</b></label>
+                    <input type="number" name="id_editorial" id="id_editorial" required>
+                </div>
+                <div class="union">
+                    <label for="numero_paginas"><b>Numero Paginas:</b></label>
+                    <input type="number" name="numero_paginas" id="numero_paginas" required>
+                    <label for="precio"><b>Precio:</b></label>
+                    <input type="number" name="precio" id="precio" required>
+                </div>
+                <div class="union">
+                    <label for="idioma"><b>Idioma:</b></label>
+                    <input type="text" name="idioma" id="idioma" required>
+                    <label for="genero"><b>Genero:</b></label>
+                    <input type="text" name="genero" id="genero" required>
+                </div>
+                <div>
+                    <label for="resumen"><b>Resumen:</b></label>
+                    <input type="text" name="resumen" id="resumen">
+                </div>
+                <div>
+                    <label for="portada"><b>Portada:</b></label>
+                    <input type="text" name="portada" id="portada">
+                </div>
+                <button class="boton_enviar" type="submit">Añadir</button>
+                <div class="texto">
+                    <p>Pincha aqui para eliminar una edicion: <a href="eliminar_productos.html">Eliminar</a></p>
+                </div>
+            </form>                 
+            <form class="anadir" action="php/anadir_edicion.php" method="post">
+                <h1 class="titulo_inicio">AÑADIR UNA EDICION</h1>
+                <div><label for="libro"><b>Libro:</b></label>
+                    <input type="text" name="libro" id="libro" required>
+                </div>
+                <div><label for="nombre_edicion"><b>Nombre:</b></label>
+                    <input type="text" name="nombre_edicion" id="nombre_edicion" required>
+                </div>
+                <div class="union">
+                    <label for="anno_edicion"><b>Año:</b></label>
+                    <input type="number" name="anno_edicion" id="anno_edicion" required>
+                    <label for="formato"><b>Formato:</b></label>
+                    <input type="text" name="formato" id="formato" required>
+                </div>
+                <div class="union">  
+                    <label for="precio"><b>Precio:</b></label>
+                    <input type="number" name="precio" id="precio" required>
+                    <label for="id_editorial"><b>Editorial:</b></label>
+                    <input type="number" name="id_editorial" id="id_editorial" required>
+                </div>
+                <div>
+                    <label for="portada"><b>Portada:</b></label>
+                    <input type="text" name="portada" id="portada">
+                </div>
+                <button class="boton_enviar" type="submit">Añadir</button>
+                <div class="texto">
+                    <p>Pincha aqui para eliminar una edicion: <a href="eliminar_productos.html">Eliminar</a></p>
+                </div>
+            </form>            
+        </div>
+
+    </div>
+    <footer>
+        <div class="contenedor_footer">
+            <img src="assets/logo_footer.png" alt="">
+            <div class="footer_menu">
+                <h2>Menú</h2>
+                <p>Sobre nosotros</p>
+                <p>Colabora con nosotros</p>
+                <p>Envia tu manuscrito</p>
+                <p>Dondé comprar</p>
+                <p>Contacto</p>
+            </div>
+            <div class="footer_redes">
+                <h2>Redes</h2>
+                <div><img src="assets/iconos/tik-tok.png" alt=""><a href="https://www.tiktok.com/es/">
+                    <p>Tik-Tok</p>
+                </a>
+            </div>
+            <div><img src="assets/iconos/facebook.png" alt=""><a href="https://www.facebook.com/?locale=es_ES">
+                    <p>Facebook</p>
+                </a>
+            </div>
+            <div><img src="assets/iconos/instagram.png" alt=""><a href="https://www.instagram.com">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div><img src="assets/iconos/twitter.png" alt=""><a href="https://x.com/?lang=es">
+                    <p>Twitter</p>
+                </a>
+            </div>
+            <div><img src="assets/iconos/youtube.png" alt=""><a href="https://www.youtube.com">
+                    <p>Youtube</p>
+                </a>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <div class="subfooter">
+        <p>© Todos los derechos reservados - </p>
+    </div>
+    </footer>
+    <script src="js/animacion.js"></script>
+</body>
+
+</html>

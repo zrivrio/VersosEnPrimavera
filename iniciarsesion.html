@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERSOS EN PRIMAVERA</title>
+    <link rel="stylesheet" href="formularios.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <img class="logo" src="assets/logo_header.png" alt="logo_intoweb" />
+            <img class="boton_cabecera" onclick="anadir()" src="assets/iconos/menu-hamburguesa.png" />
+            <div class="container_cabecera">
+                <div class="menu">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="registrolibros.php">Libros</a>
+                    <a href="registroescritores.php">Escritores</a>
+                    <a href="registroediciones.php">Ediciones</a>
+                </div>
+                <div class="usuario">
+                    <a href="iniciarsesion.html"><img src="assets/iconos/usuario.png" alt="" />
+                        <p>Inicio sesion</p>
+                    </a>
+                    <a href="compra.html"><img src="assets/iconos/carrito-de-compras.png" alt="" />
+                        <p>Comprar</p>
+                    </a>
+
+                    <a href="anadirproducto.html"><img src="assets/iconos/mas.png" alt="" />
+                        <p>Añadir libro</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="iniciarsesion">
+            <form class="anadir" action="php/cargar_escritor.php" method="post" enctype="multipart/form-data">
+                <div class="titulo_inicio">
+                    <h1>INICIAR SESION ESCRITOR</h1>
+                </div>
+                <div>
+                    <label for="nombre"><b>Nombre:</b></label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+                <div>
+                    <label for="apellido"><b>Apellido:</b></label>
+                    <input type="text" name="apellido" id="apellido" required>
+                </div>
+                <div class="union">
+                    <label for="fecha_nacimiento"><b>Fecha Nacimiento:</b></label>
+                    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                
+                    <label for="nacionalidad"><b>Nacionalidad:</b></label>
+                    <input type="text" name="nacionalidad" id="nacionalidad" required>
+                </div>
+                <div>
+                    <label for="fotografia"><b>Fotografia:</b></label>
+                    <input type="text" name="fotografia" id="fotografia" required>
+                </div>
+                
+                <button class="boton_enviar" type="submit">Iniciar sesion</button>
+                <div class="texto">
+                <p>Pincha aqui para eliminar un autor: <a href="eliminar_inicio.html">Eliminar</a></p>
+                </div>
+            </form>
+            
+            <form class="anadir" action="php/cargar_usuario.php" method="post">
+                <div class="titulo_inicio">
+                    <h1>INICIAR SESION USUARIO</h1>
+                </div>
+                <div>
+                    <label for="nombre"><b>Nombre:</b></label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+                <div><label for="apellido"><b>Apellido:</b></label>
+                    <input type="text" name="apellido" id="apellido" required>
+                </div>
+                <div class="union">
+                    <label for="correo_electronico"><b>Email:</b></label>
+                        <input type="email" name="correo_electronico" id="correo_electronico" required>
+                    
+                    <label for="telefono"><b>Telefono:</b></label>
+                        <input type="text" name="telefono" id="telefono" required>
+
+                </div>
+                <div>
+                    <label for="direccion"><b>Direccion:</b></label>
+                    <input type="text" name="direccion" id="direccion" required>
+                </div>
+                <button class="boton_enviar" type="submit">Iniciar sesion</button>
+                <div class="texto">
+                <p>Pincha aqui para eliminar un usuario: <a href="eliminar_inicio.html">Eliminar</a></p>
+            </div>
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <div class="contenedor_footer">
+            <img src="assets/logo_footer.png" alt="">
+            <div class="footer_menu">
+                <h2>Menú</h2>
+                <p>Sobre nosotros</p>
+                <p>Colabora con nosotros</p>
+                <p>Envia tu manuscrito</p>
+                <p>Dondé comprar</p>
+                <p>Contacto</p>
+            </div>
+            <div class="footer_redes">
+                <h2>Redes</h2>
+                <div><img src="assets/iconos/tik-tok.png" alt=""><a href="https://www.tiktok.com/es/">
+                        <p>Tik-Tok</p>
+                    </a>
+                </div>
+                <div><img src="assets/iconos/facebook.png" alt=""><a href="https://www.facebook.com/?locale=es_ES">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <div><img src="assets/iconos/instagram.png" alt=""><a href="https://www.instagram.com">
+                        <p>Instagram</p>
+                    </a>
+                </div>
+                <div><img src="assets/iconos/twitter.png" alt=""><a href="https://x.com/?lang=es">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+                <div><img src="assets/iconos/youtube.png" alt=""><a href="https://www.youtube.com">
+                        <p>Youtube</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="subfooter">
+        <p>© Todos los derechos reservados - </p>
+    </div>
+    </footer>
+    <script src="js/animacion.js"></script>
+</body>
+
+</html>
